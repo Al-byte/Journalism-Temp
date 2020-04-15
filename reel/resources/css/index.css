@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'District';
+    src: url('../District.ttf');
+    font-style: normal;
+    font-weight: 100;
+} 
+
+@font-face {
+    font-family: 'ayar';
+    src: url('../ayar.ttf');
+    font-style: normal;
+    font-weight: 100;
+  }
+
+html, body {
+    font-family: ayar;
+    font-weight: 100;
+    color: rgb(76, 76, 76);
+    overflow-x: hidden;
+}
+
+.frame {
+    border-bottom:1px solid rgb(220, 220, 220);
+}
+
+h1 {
+    font-family: District;
+    color: rgb(76, 76, 76);
+}
+
+h3, .blue {
+    font-family: District;
+    color: rgb(0, 169, 232);
+}
+
+.top-border-grey {
+    background-color: rgb(220, 220, 220);
+}
+
+.top-border-blue {
+    background-color: rgb(0, 169, 232);
+}
+
+.border-right {
+    border-right: 1px solid rgb(220, 220, 220);
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.connect, .work {
+    width: 100%;
+}
+
+footer {
+    border-top: 4px solid rgb(0, 169, 232);
+}
+
+.credits {
+    font-size: 12px;
+}
+
+.mobile {
+    display: none;
+}
+
+a:hover {
+    text-decoration: none !important; 
+}
+
+a {
+    color: rgb(0, 169, 232);
+}
+
+/* Media Queries*/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .web {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .border-right {
+        border: none !important;
+    }
+
+    .connect {
+        max-width: 100%;
+    }
+
+    .meet {
+        margin-top: 15px;
+    }
+
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .web {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .border-right {
+        border: none !important;
+    }
+    
+    .connect {
+        max-width: 50%;
+    }
+
+    .meet {
+        margin-top: 20px;
+    }
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .web {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .border-right {
+        border: none !important;
+    }
+
+    .connect {
+        max-width: 70%;
+    }
+
+    .work {
+        max-width: 90%;
+    }
+
+    .meet {
+        margin-top: 25px;
+    }
+
+    iframe {
+        margin: 0 auto !important;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .web {
+        display: block;
+    }
+    
+    .border-right {
+        border-right: 1px solid rgb(76, 76, 76);
+    }  
+
+    ul {
+        margin-left: -15px;
+    }
+
+    .nav-link:hover {
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(0, 169, 232);
+        margin-bottom: -20px;
+    }
+
+    .connect {
+        width: 100%;
+    }
+
+    #connect-container {
+        position: relative;
+        top: 20%;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+        max-height: 90%;
+        margin: 0 auto 0 30px;
+    }
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+    ul {
+        margin-left: -15px;
+    }
+
+    .nav-link:hover {
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(0, 169, 232);
+        margin-bottom: -20px;
+    }
+    
+    #connect-container {
+        position: relative;
+        top: 20%;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+        max-height: 90%;
+        margin: 0 auto 0 30px;
+    }
+ }
